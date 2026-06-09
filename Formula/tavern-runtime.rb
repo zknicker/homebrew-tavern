@@ -1,9 +1,9 @@
 class TavernRuntime < Formula
   desc "Always-on Tavern Runtime server"
   homepage "https://github.com/zknicker/tavern"
-  url "https://punchpress-electron-app-209596837609-us-east-1-an.s3.us-east-1.amazonaws.com/tavern/mac/tavern-runtime-1.2.9-aarch64-apple-darwin.tar.gz"
-  sha256 "df00efa8bf51d098e7acd5cbe4f9405e7a28e4aefbb86ba5afb65549239d53e8"
-  version "1.2.9"
+  url "https://punchpress-electron-app-209596837609-us-east-1-an.s3.us-east-1.amazonaws.com/tavern/mac/tavern-runtime-1.4.0-aarch64-apple-darwin.tar.gz"
+  sha256 "643990ec591ecd0856381b70b664967fecc95b76c4bf3e8940a5341f1a2ea2dc"
+  version "1.4.0"
   license :cannot_represent
 
   depends_on "node"
@@ -11,12 +11,7 @@ class TavernRuntime < Formula
   def install
     bin.install "bin/tavern"
     bin.install "bin/tavern-runtime"
-    bin.install "bin/initdb.wasm"
-    bin.install "bin/pg_trgm.tar.gz"
-    bin.install "bin/pglite.data"
-    bin.install "bin/pglite.wasm"
-    bin.install "bin/vector.tar.gz"
-    (share/"tavern").install "share/tavern/openclaw-plugins"
+    (share/"tavern").install "share/tavern/runtime-assets"
     (share/"tavern/node_modules/@tavern").install "share/tavern/node_modules/@tavern/sdk"
     (etc/"tavern").mkpath
     (var/"tavern/runtime").mkpath
