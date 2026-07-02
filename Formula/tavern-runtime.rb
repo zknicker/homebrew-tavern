@@ -1,9 +1,9 @@
 class TavernRuntime < Formula
   desc "Always-on Tavern Runtime server"
   homepage "https://github.com/zknicker/tavern"
-  url "https://punchpress-electron-app-209596837609-us-east-1-an.s3.us-east-1.amazonaws.com/tavern/mac/tavern-runtime-1.4.32-aarch64-apple-darwin.tar.gz"
-  sha256 "b86070c312d69e7edbe7374f41c23ff4937334d852e2bb0d02e06952975bb6f5"
-  version "1.4.32"
+  url "https://punchpress-electron-app-209596837609-us-east-1-an.s3.us-east-1.amazonaws.com/tavern/mac/tavern-runtime-1.4.33-aarch64-apple-darwin.tar.gz"
+  sha256 "272b34a192ac0fb5399301ba8e0cec7cb94d6e0c75e7137c36d543adb5149fdf"
+  version "1.4.33"
   license :cannot_represent
 
   depends_on "node"
