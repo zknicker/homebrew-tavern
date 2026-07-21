@@ -4,6 +4,7 @@ class GrottoRuntime < Formula
   url "https://punchpress-electron-app-209596837609-us-east-1-an.s3.us-east-1.amazonaws.com/tavern/mac/grotto-runtime-1.5.3-aarch64-apple-darwin.tar.gz"
   sha256 "430022aca109d0b18e5c9a09e23c7618de27803c227275a7135ab2f69272bf40"
   version "1.5.3"
+  revision 1
   license :cannot_represent
 
   depends_on "node"
@@ -13,6 +14,7 @@ class GrottoRuntime < Formula
     bin.install "bin/grotto-runtime"
     (share/"grotto").install "share/grotto/runtime-assets"
     (share/"grotto/node_modules/@tavern").install "share/grotto/node_modules/@tavern/sdk"
+    (share/"grotto/node_modules/@tobilu").install "share/grotto/node_modules/@tobilu/qmd"
     (share/"grotto/node_modules").install "share/grotto/node_modules/agent-browser"
     (etc/"grotto").mkpath
     (var/"log/grotto").mkpath
